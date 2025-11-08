@@ -1,10 +1,12 @@
 let on = document.getElementById("on")
 let off = document.getElementById("off")
 
-off.addEventListener("click", function(){
+
+// Works as the button turns off.
+off.addEventListener("click", function(){    
     let container = document.getElementsByClassName("screen-container")[0]
     container.style.backgroundColor = "white"
-    document.getElementById("heading").textContent = "Dark mode is off"
+    document.getElementById("heading").textContent = "Dark mode is off"    
     document.getElementById("heading").style.color = "black"
     // on.innerHTML = "Dark off <i class='fa-solid fa-moon'></i>"
     // on.style.color= "black"
@@ -15,6 +17,7 @@ off.addEventListener("click", function(){
 
 
 })
+// Works when the button is on
 on.addEventListener("click",function(){
     let container = document.getElementsByClassName("screen-container")[0]
     document.getElementById("heading").textContent = "Dark mode is on"
