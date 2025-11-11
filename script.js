@@ -2,7 +2,6 @@ let on = document.getElementById("on")
 let off = document.getElementById("off")
 
 
-// Works as the button turns off.
 off.addEventListener("click", function(){    
     let container = document.getElementsByClassName("screen-container")[0]
     container.style.backgroundColor = "white"
@@ -17,7 +16,7 @@ off.addEventListener("click", function(){
 
 
 })
-// Works when the button is on
+
 on.addEventListener("click",function(){
     let container = document.getElementsByClassName("screen-container")[0]
     document.getElementById("heading").textContent = "Dark mode is on"
